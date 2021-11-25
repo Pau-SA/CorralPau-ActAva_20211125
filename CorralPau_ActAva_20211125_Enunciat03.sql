@@ -1,12 +1,10 @@
 use ActAva_20211125;
 
-
-SELECT DISTINCT nom_prod "Nom Producte", nom_prov "Nom Proveidor", nom_cat "Nom Categoria"
+SELECT DISTINCT nom_prod "Nom Producte", nom_prov "Nom Proveidor", nom_cat "Nom Categoria", unitats_prod "unitats"
      FROM PRODUCTES, CATEGORIES, PROVEIDORS
      WHERE PRODUCTES.id_prov = PROVEIDORS.id_prov
-        AND PRODUCTES.id_cat = CATEGORIES.id_cat;
-      
-
+        AND PRODUCTES.id_cat = CATEGORIES.id_cat
+        ORDER BY nom_cat;
 
 
 -- +----------------------------------+----------------------------------------+---------------------+
