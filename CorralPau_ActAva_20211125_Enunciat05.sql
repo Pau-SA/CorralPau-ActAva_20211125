@@ -1,10 +1,10 @@
 use ActAva_20211125;
 
 
-SELECT nom_treb "Nom" , cognom_treb "Cognom", year(curdate()) - year(anyNaix_treb) "Edat"
-    -> FROM TREBALLADORS;
+SELECT nom_treb "Nom" , cognom_treb "Cognom", year(curdate()) - year(anyNaix_treb) "Edat del Treballador"
+    FROM TREBALLADORS;
 
-    
+
 -- +-----------+----------+------+
 -- | Nom       | Cognom   | Edat |
 -- +-----------+----------+------+

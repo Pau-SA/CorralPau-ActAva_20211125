@@ -1,7 +1,5 @@
 use ActAva_20211125;
 
 
-SELECT COUNT(unitats_prod) "Unitats", nom_prod "Nom Producte", nom_prov "Nom Proveidor"  
+SELECT nom_prod "Nom Producte", nom_prov "Nom Proveidor", unitats_prod "Unitats"  
     FROM PRODUCTES, PROVEIDORS
-    ;
-    
