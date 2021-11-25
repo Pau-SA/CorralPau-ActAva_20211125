@@ -1,3 +1,5 @@
+use ActAva_20211125;
+
 SELECT nom_prod "Nom Producte", unitats_prod "Unitats", preu_prod "Preu"
     FROM PRODUCTES
     WHERE id_cat = 5;
